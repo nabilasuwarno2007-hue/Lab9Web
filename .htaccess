@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /lab9_php_modular/project/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-zA-Z0-9/_-]+)/?$ index.php?page=$1 [QSA,L]

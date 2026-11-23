@@ -1,0 +1,407 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f1f5f9;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #1e293b;
+    color: white;
+    padding: 22px 5%;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+header h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background: #334155;
+    color: white;
+}
+
+/* KONTEN */
+main {
+    width: 90%;
+    max-width: 1150px;
+    margin: 35px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    min-height: 350px;
+}
+
+h2 {
+    color: #1e293b;
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* LINK DAN TOMBOL */
+a {
+    color: #2563eb;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+button,
+.submit input {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover,
+.submit input:hover {
+    background: #1d4ed8;
+}
+
+/* TABEL */
+.main {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+}
+
+th {
+    background: #1e293b;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* FORM */
+.input {
+    margin-bottom: 18px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input input,
+.input select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.input input:focus,
+.input select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+        padding: 18px;
+        margin: 20px auto;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+/* DASHBOARD */
+.welcome {
+    background: linear-gradient(135deg, #1e293b, #2563eb);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    color: white;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.welcome p {
+    color: #dbeafe;
+    margin-bottom: 0;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.dashboard-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    border-left: 4px solid #2563eb;
+}
+
+.dashboard-card h3 {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    color: #1e293b;
+    font-weight: 600;
+    margin: 0;
+}
+
+.dashboard-info {
+    padding: 25px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.dashboard-info h3 {
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.btn-dashboard {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 20px;
+    background: #2563eb;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.btn-dashboard:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TABEL DATA BARANG */
+table {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #1e293b;
+    padding: 15px;
+    font-size: 14px;
+}
+
+td {
+    padding: 14px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+td img {
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+/* TOMBOL TAMBAH BARANG */
+a[href="index.php?page=barang/add"] {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+a[href="index.php?page=barang/add"]:hover {
+    background: #1d4ed8;
+}
+
+/* AKSI EDIT DAN HAPUS */
+td a {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+/* FORM TAMBAH DAN UBAH BARANG */
+form {
+    max-width: 650px;
+    margin-top: 20px;
+}
+
+.input {
+    margin-bottom: 22px;
+}
+
+.input label {
+    font-size: 14px;
+    color: #334155;
+}
+
+.input input,
+.input select,
+.input textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #f8fafc;
+    transition: 0.2s;
+}
+
+.input input:focus,
+.input select:focus,
+.input textarea:focus {
+    background: white;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.submit input {
+    padding: 12px 25px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.submit input:hover {
+    transform: translateY(-2px);
+}
+
+/* HALAMAN PROFIL DAN KONTAK */
+main section:not(.dashboard) {
+    line-height: 1.8;
+}
+
+main section:not(.dashboard) h2 {
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 20px;
+}
+
+main section:not(.dashboard) p {
+    color: #475569;
+}
+
+/* INFORMASI KONTAK */
+main section:not(.dashboard) p strong {
+    color: #1e293b;
+}
+/* ACTIVE NAVIGATION */
+nav a.active {
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+/* FLASH MESSAGE */
+.flash-message {
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.flash-message.success {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
+.flash-message.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
